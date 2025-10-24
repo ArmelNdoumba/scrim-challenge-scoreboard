@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta name="description" content="Score Board">
+		<meta name="author" content="Ndoumba Armel">
+		<link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gafata&family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main id="container">
+			<section class="section__title">
+				<h1 id="title">LIVE SCOREBOARD </h1>
+			</section>
+
+			<section class="section__score">
+				<article class="article__team">
+					<h3 class="article__team__title">HOME</h3>
+					<p class="class__rank">League rank : #2</p>
+					<h4 class="article__team__score" id="score__el__A">0</h4>
+					<div class="btn__grp">
+						<button class="btn__item" onclick="addAOne()">+1</button>
+						<button class="btn__item" onclick="addATwo()">+2</button>
+						<button class="btn__item" onclick="addAThree()">+3</button>
+					</div>					
+				</article>
+
+				<article class="article__param">
+					<h4 class="article__timer__title">Timer</h3>
+					<div class="timer__grp">
+                        <h5 id="timer__value"><span id="min">12</span>:<span id="sec">00</span></h4>
+                        <div class="timer__btn__grp">
+                            <button class="timer__btn" id="timer__reset" onclick="timerReset()">Reset</button>
+                            <button class="timer__btn" id="timer__play" onclick="decrementTimer()">Play</button>
+							<button class="timer__btn" id="timer__pause" onclick="timePause()">| |</button>
+                        </div>
+					</div>
+					<div class="period__grp">
+						<div class="period__circle__grp">
+							<div id="q1" class="period__circle" id="first__quarter"></div>
+							<h5 class="period__value">1</h5>
+						</div>
+
+						<div class="period__circle__grp">
+							<div id="q2" class="period__circle" id="second__quarter"></div>
+							<h5 class="period__value">2</h5>
+						</div>
+
+						<div class="period__circle__grp">
+							<div id="q3" class="period__circle" id="third__quarter"></div>
+							<h5 class="period__value">3</h5>
+						</div>
+
+						<div class="period__circle__grp">
+							<div id="q4" class="period__circle" id="fourth__quarter"></div>
+							<h5 class="period__value">4</h5>
+						</div>
+					</div>
+				</article>
+
+				<article class="article__team">
+					<h3 class="article__team__title">GUEST</h3>
+					<p class="class__rank">League rank : #3</p>
+					<h4 class="article__team__score" id="score__el__B">0</h4>
+					<div class="btn__grp">
+						<button class="btn__item" onclick="addBOne()">+1</button>
+						<button class="btn__item" onclick="addBTwo()">+2</button>
+						<button class="btn__item" onclick="addBThree()">+3</button>
+					</div>
+				</article>
+			</section>
+			
+			<section class="section__statistics">
+				<article>
+					<table class="table__statistics">
+						<thead class="table__statistics__head">
+							<tr>
+								<th scope="col" colspan="5">Game Statistics</th>
+							</tr>
+						</thead>
+						<tbody class="table__statistics__body">
+							<tr>
+								<th scope="col" colspan="2">Home</td>
+								<th scope="col">vs</th>
+								<th scope="col" colspan="2">Guest</td>
+							</tr>
+							
+							<tr>
+								<td class="btn__cell" onclick="addAfoul()">+</td>
+								<td id="home__foul__value">00</td>
+								<th scope="col">Fouls</th>
+								<td id="guest__foul__value">00</td>
+								<td class="btn__cell" onclick="addBfoul()">+</td>
+							</tr>
+							
+							<tr>
+								<td class="btn__cell" onclick="addAFt()">+</td>
+								<td id="home__ft__value">00</td>
+								<th scope="col">Free Throws</th>
+								<td id="guest__ft__value">00</td>
+								<td class="btn__cell" onclick="addBFt()">+</td>
+							</tr>
+							
+							<tr>
+								<td class="btn__cell" onclick="addARebound()">+</td>
+								<td id="home__rebound__value">00</td>
+								<th scope="col">Rebounds</th>
+								<td id="guest__rebound__value">00</td>
+								<td class="btn__cell" onclick="addBRebound()">+</td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+			</section>
+		</main>
+        <script src="index.js">
+            </script>
+	</body>
+</html>

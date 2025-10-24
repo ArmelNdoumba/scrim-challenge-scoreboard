@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    align-items: center;
+    background: #660c04;
+    background: radial-gradient(circle,rgba(102, 12, 4, 1) 0%, rgba(199, 173, 87, 1) 57%, rgba(102, 12, 4, 1) 100%);
+    font-family: 'roboto';
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#title {
+    font-size: 3rem;
+    color: black;
+    text-shadow: 0 0 1px #660c04;
+}
+
+.section__score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #660c04;
+    box-shadow: 0 0 12px #660c04;
+    background: #660c04;
+    background: radial-gradient(circle,rgba(102, 12, 4, 1) 0%, rgba(199, 173, 87, 1) 57%, rgba(102, 12, 4, 1) 100%);
+}
+
+.article__team, .article__param {
+    margin: 10px;
+    padding: 10px;
+}
+
+.article__team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article__team__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: whitesmoke;
+    text-shadow: 0 0 4px #660c04;
+}
+
+.article__team__score {
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 0.5rem 2.5rem;
+    margin: 1rem;
+    background-color: black;
+    color: red;
+    border-radius: 5px;
+}
+
+.class__rank {
+    font-size: 0.6rem;
+}
+
+.btn__grp {
+    display: flex;
+}
+
+.btn__item {
+    background: transparent;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn__item:hover {
+    background: #660c04;
+    font-weight: bold;
+    color: wheat;
+    border: none;
+}
+
+
+.btn__item:focus, .btn__item:active, btn__item.btn__item:pressed {
+    border: none;
+}
+
+.article__param {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article__timer__title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.4rem;
+    border-bottom: 1px solid #660c04;
+    border-top: 1px solid #660c04;
+    background: #fccb35;
+    background: radial-gradient(circle,rgba(252, 203, 53, 0.55) 0%, rgba(255, 255, 255, 1) 51%, rgba(252, 203, 53, 0.55) 100%);
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px #660c04;
+}
+
+.timer__grp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    padding: 5px 15px 5px 15px;
+    background: black;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#timer__value {
+    font-size: 2.2rem;
+    color: red;
+}
+
+.timer__btn__grp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centers;
+    margin-left: 5px;
+}
+
+.timer__btn {
+    background: whitesmoke;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 4px ;
+    font-size: 0.6rem;
+    font-weight: bold;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.timer__btn:hover {
+    background-color: #660c04;
+    color: white;
+    font-family: inherit;
+}
+
+#timer__pause {
+    display: none;
+}
+
+.period__grp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.period__circle__grp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.period__circle {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 0 2px black;
+    margin: 5px 8px;
+}
+
+.period__value {
+    color: white;
+    font-weight: bold;
+}
+
+.section__statistics {
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    color: #3B0000;
+    text-shadow: 0 0 2px #fccb35;
+    box-shadow: 0 0 15px #660c04;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+td, th {
+    padding: 10px 30px;
+}
+
+th {
+    background: #660c04;
+    color: wheat;
+    border: no;
+}
+
+.btn__cell {
+    cursor: pointer;
+}
+
+.btn__cell:hover {
+    background: #3B0000;
+    color: wheat;
+    border: none;
+}
